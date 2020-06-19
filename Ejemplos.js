@@ -120,11 +120,116 @@ console.log(i);
 i++;
 }
 
-//Ejemplo estructura do while
-document.write("<br /><br />Ejemplo 9 - do-while <br />");
+//Ejemplo 11: Estructura do while
+document.write("<br /><br />Ejemplo 11: Estructura do while <br />");
+console.log('Ejemplo 11: Estructura do while');
 var i=20;
 do{
-    document.write(i + "<br />");
+    document.write("&nbsp &nbsp" + i + "<br />");
+    console.log(i);
     i++;
 }
 while(i<=25);
+
+//Ejemplo 12: Estructura break 
+document.write("<br /> Ejemplo 12: Estructura break <br />");
+console.log('Ejemplo 12: Estructura break');
+for(i=0; i<=10; i++){
+    if(i == 5){
+        break;
+    }
+    document.write("&nbsp &nbsp" + i + "<br />");
+    console.log(i);
+}
+
+//Ejemplo 13: Estructura continue 
+document.write("<br /> Ejemplo 13: Estructura continue<br />");
+console.log('Ejemplo 13: Estructura continue');
+for(i=0; i<=10; i++){
+    if(i == 5){
+        continue;
+    }
+    document.write("&nbsp &nbsp" + i + "<br />");
+    console.log(i);
+}
+
+//Ejemplo 14: Funciones 
+document.write("<br /> Ejemplo 14: Funciones <br />");
+console.log('Ejemplo 14: Funciones');
+function myFuncion(a, b){
+    return a*b;
+}
+var x = myFuncion(5,6);
+document.write("&nbsp &nbsp" + x);
+console.log(x);
+
+//Ejemplo 15:Ventanas 
+document.write('<br /><br /> Ejemplo 15:Ventanas');
+console.log('Ejemplo 15:Ventanas');
+var result = confirm("¿Quieres continuar viendo los ejercicios?");
+if(result == true){
+    alert("Gracias");
+}
+else{
+    alert("No hay problema");
+}
+
+//ECMAScript 6
+
+//Ejemplo 16: Var
+document.write("<br /><br /> Ejemplo 16: Var");
+console.log("Ejemplo 16: Var");
+function varTest(){
+    var x = 1;
+    if(true){
+        var x = 2;
+        document.write('<br />&nbsp &nbsp ' + x);
+        console.log(x);
+    }
+    document.write('<br />&nbsp &nbsp ' + x);
+    console.log(x);
+    return "";
+}
+y= varTest();
+document.write('<br />&nbsp &nbsp ' + y);
+console.log(y);
+
+//Ejemplo 17: Let
+document.write("<br />Ejemplo 17: Let");
+console.log("Ejemplo 16: Var");
+function letTest(){
+    let x = 1;
+    if (true){
+        let x = 2;
+        document.write('<br /> &nbsp &nbsp' + x);
+        console.log(x);
+    }
+    document.write('<br /> &nbsp &nbsp' + x);
+    console.log(x);
+    return '';
+}
+y = letTest();
+document.write('<br /> &nbsp &nbsp ' + y);
+console.log(y);
+
+//Ejemplo 18: Templates literal
+document.write("<br />Ejemplo 18: Templates literal<br />");
+console.log("Ejemplo 18: Templates literal");
+let name = 'David';
+let mgs = `&nbsp &nbsp Welcome ${name}!`;
+document.write(mgs);
+console.log(mgs)
+
+//Ejemplo 19: Templates literal
+document.write("<br /><br />Ejemplo 18: Templates literal<br />");
+console.log("Ejemplo 18: Templates literal");
+let a = 8;
+let b = 34;
+let mg = `La suma es ${a+b}`;
+document.write('&nbsp &nbsp' + mg);
+console.log(mg);    
+
+
+
+
+
